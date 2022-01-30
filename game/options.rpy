@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.1.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -42,9 +42,8 @@ define build.name = "VNBE"
 
 ## Sounds and music ############################################################
 
-## These three variables control, among other things, which mixers are shown
-## to the player by default. Setting one of these to False will hide the
-## appropriate mixer.
+## These three variables control which mixers are shown to the player by
+## default. Setting one of these to False will hide the appropriate mixer.
 
 define config.has_sound = True
 define config.has_music = True
@@ -143,7 +142,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "VNBE-1643253751"
+define config.save_directory = "Achievements-1625477811"
 
 
 ## Icon ########################################################################

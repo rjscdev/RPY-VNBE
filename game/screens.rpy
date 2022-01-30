@@ -311,6 +311,8 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
+        textbutton _('Achievements') action ShowMenu("achievement_menu")
+
         textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
@@ -1043,10 +1045,6 @@ screen keyboard_help():
     hbox:
         label "V"
         text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
-
-    hbox:
-        label "Shift+A"
-        text _("Opens the accessibility menu.")
 
 
 screen mouse_help():
