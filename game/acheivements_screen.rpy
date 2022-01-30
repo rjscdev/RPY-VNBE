@@ -47,7 +47,7 @@ screen achievement_menu():
                     if not achievement.has(v[0]):
 
                         ## We're doing a check for all achievements
-                        ## that is not a 'platinum'.
+                        ## that is not a 'platinum',
                         ## The platinum achievement will not appear
                         ## in the list.
                         ## Index '3' is the type of achievement.
