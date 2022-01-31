@@ -72,8 +72,8 @@ label start:
                 "Acheivement System":
                     jump Acheivements
 
-                "Kinematic Text":
-                    jump Kinematic
+                "Text Effects":
+                    jump TxtEff
 
                 "Skip":
                     jump Skip
@@ -102,7 +102,16 @@ label start:
 
                 "return":
                     jump Mechanics
-    label Kinematic:
+    label TxtEff:
+        "here are some Text effects"
+        "{sc}Shake it{/sc}"
+        "{rotat}wooah{/rotat}"
+        "{explode}BOOM{/explode}"
+        "{explodehalf=2-2.0}BOOM{/explodehalf}"
+        "{glitch=80}{b}GLITCH{/glitch}"
+        "{bt=10}woaaaaah{/bt}"
+        "{move}{b}Move This{/move}"
+        "{glitch=80}{sc}{b}combined{/sc}{/glitch}"
         jump Mechanics
 
     label Skip:

@@ -1,32 +1,82 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 189, in script
-    python:
-  File "renpy/common/00start.rpy", line 190, in <module>
-    renpy.execute_default_statement(True)
-  File "game/achievement_screen.rpy", line 110, in set_default
-    default achievement_notification_list = []
-Exception: store.achievement_notification_list is being given a default a second time.
+  File "game/script.rpy", line 111, in script
+    "{chaos}BRUH{/chaos}"
+  File "game/TextEffects.rpy", line 249, in render
+    child_render = renpy.render(self.child, width, height, st, at)
+Exception: Could not find font u'Pacifico-Regular.ttf'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 189, in script
-    python:
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 190, in <module>
-    renpy.execute_default_statement(True)
-  File "renpy/exports.py", line 3753, in execute_default_statement
-    i.set_default(start)
-  File "game/achievement_screen.rpy", line 110, in set_default
-    default achievement_notification_list = []
-Exception: store.achievement_notification_list is being given a default a second time.
+  File "game/script.rpy", line 111, in script
+    "{chaos}BRUH{/chaos}"
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 901, in do_display
+    **display_args)
+  File "renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 688, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1264, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/text/text.py", line 2089, in render
+    renders[i] = renpy.display.render.render(i, width, self.style.size, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "game/TextEffects.rpy", line 249, in render
+    child_render = renpy.render(self.child, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/text/text.py", line 2096, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "renpy/text/text.py", line 639, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "renpy/text/text.py", line 248, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "renpy/text/font.py", line 702, in get_font
+    face = load_face(fn)
+  File "renpy/text/font.py", line 643, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font u'Pacifico-Regular.ttf'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
-VNBE 1.0
-Sun Jan 30 14:05:31 2022
+VNBE 0.1.0
+Sun Jan 30 20:41:31 2022

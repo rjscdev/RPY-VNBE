@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 73: Captions and say menuitems may not exist in the same menu.
-    "Acheivement system"
-                        ^
+File "game/GlitchText.rpy", line 38: expected an indented block
+        new_list = [ ]
+                ^
+    
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jan 30 15:48:22 2022
+Sun Jan 30 20:22:48 2022

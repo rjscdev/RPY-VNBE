@@ -5,7 +5,7 @@ the framework has the following mechanics:
 
 - [x] Acheivement System
 - [x] Text Sounds
-- [ ] Kinematic Text Effects
+- [x] Text Effects
 - [ ] Chat phone System
 
 ## how to use the systems📦⚙:
@@ -39,4 +39,21 @@ for clear the acheivements use
 ```
 $ Acheivement.purge
 
+```
+### Text Effects ✨:
+place these tags inside the text you wish to place
+```
+tags:
+        "{sc}{/sc}"
+        "{rotat}{/rotat}"
+        "{explode}{/explode}"
+        "{explodehalf=amount}{/explodehalf}"
+        "{glitch=Glitch amount}{/glitch}"
+        "{bt=10}{/bt}"
+        "{move}{/move}"
+```
+you can also combine tags:
+```
+example:
+"{glitch=80}{sc}{b}combined{/sc}{/glitch}"
 ```

@@ -1,41 +1,40 @@
-Sun Jan 30 15:53:34 2022
+Sun Jan 30 20:52:23 2022
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.61s
-Early init took 0.03s
-Loader init took 0.17s
-Loading error handling took 0.11s
-Loading script took 1.28s
-Loading save slot metadata. took 0.10s
+Bootstrap to the start of init.init took 0.45s
+Early init took 0.02s
+Loader init took 0.12s
+Loading error handling took 0.09s
+Loading script took 0.65s
+Loading save slot metadata. took 0.07s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.34s
-Loading analysis data took 0.13s
+Running init code took 0.28s
+Loading analysis data took 0.10s
 Analyze and compile ATL took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\rober\\AppData\\Roaming/RenPy/backups\\VNBE':
-Dump and make backups. took 0.51s
+Dump and make backups. took 0.33s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.33s
+Initial gc. took 0.10s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.02s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.59s
-Build styles took 0.06s
-Load screen analysis took 0.00s
-Analyze screens took 0.16s
-Save screen analysis took 0.39s
-Prepare screens took 0.99s
+Init translation took 0.36s
+Build styles took 0.04s
+Load screen analysis took 0.15s
+Analyze screens took 0.02s
+Save screen analysis took 0.00s
+Prepare screens took 0.61s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.20s
-Running _start took 0.01s
+Save bytecode. took 0.00s
+Running _start took 0.00s
 Performance test:
-Interface start took 1.36s
+Interface start took 0.89s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1600, 900)
@@ -49,8 +48,8 @@ Screen sizes: virtual=(1920, 1080) physical=(1419, 798) drawable=(1419, 798)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles took 0.02s
-Load screen analysis took 0.13s
+Build styles took 0.05s
+Load screen analysis took 0.17s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.01s

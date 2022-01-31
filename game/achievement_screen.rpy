@@ -1,5 +1,5 @@
-## Here we have the menu screen to display all the locked
-## and unlocked achievements.
+"""Here we have the menu screen to display all the locked
+and unlocked achievements."""
 screen achievement_menu():
 
     tag menu
@@ -7,7 +7,7 @@ screen achievement_menu():
     ## If you'd like to display a number and total of achievements you can use this.
     use game_menu(_("Achievements | {:01d}/{}".format(len(persistent.my_achievements), len(achievement_name) if len(persistent.my_achievements) == len(achievement_name) else len(achievement_name) - 1)), scroll="viewport"):
     ## Else, use this.
-    # use game_menu(_("Achievements"), scroll="viewport"):
+    #use game_menu(_("Achievements"), scroll="viewport"):
 
         style_prefix "achievements"
 
@@ -72,7 +72,6 @@ screen achievement_menu():
                                             text str(v[1]) color '#FFF3'
                                         else:
                                             text _('Hidden Achievement') style 'achievements_label' color '#FFF3'
-        
 
 init python:
 
@@ -131,14 +130,14 @@ screen achievement_notification():
     if achievement_notification_list:
 
         frame at achievement_appear:
-            background Solid('#FFF')
+            background Solid('#ffffff')
             align (0.5, 0.0)
             padding (20, 20, 20, 20)
 
             hbox:
                 xysize (100, 100)
                 add achievement_notification_list[0].image
-                
+
                 null width 20
 
                 vbox:
